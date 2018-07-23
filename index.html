@@ -1,5 +1,344 @@
----
-layout: default
-title: Landing Page
-subTitle: A Template by Start Bootstrap
----
+<!DOCTYPE html>
+<html>
+<head>
+<title>초대합니다 :-)</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+
+<meta property="og:site_name" content="babyparty" />
+<meta property="og:title" content="결혼식을  축하해 주세요." />
+<meta property="og:description" content="2018년 10월 28일 오후 1시, 강변 테크노마트 웨딩스퀘어" />
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/16554116/12774533/375b55dc-ca89-11e5-9829-e5984d1d2efa.jpg" />
+<meta property="og:image" content="https://cloud.githubusercontent.com/assets/16554116/12774535/375cf090-ca89-11e5-8589-c69d0f62defb.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="wdcard.github.io" />
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+<style>
+* {
+ margin: 0;
+ padding: 0;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-text-size-adjust: 100%;
+}
+
+html,body {
+ height: 100%;
+}
+
+body {
+ background-color: #eee;
+}
+
+#wrap {
+ max-width: 500px;
+ margin: 0 auto;
+ background-color: #fff;
+ height: auto;
+}
+
+.img100 {
+ max-width: 100%;
+ width: auto !important;
+ width: 100%;
+}
+
+#autoplay, .slide_wrap {
+ position:relative;
+ width:100%;
+ overflow:hidden;
+}
+
+.content_wrap {
+ font-size: 14px;
+ text-align: center;
+ padding-top: 15px;
+ margin: 0 15px;
+ color: #8d968c;
+ line-height: 20px;
+}
+
+.content_wrap h1 {
+ font-size: 15px;
+ font-weight: bold;
+ text-align: center;
+ padding-bottom: 15px;
+ color: #50a27f;
+}
+
+.content_wrap h1 img {
+ height: 40px;
+ vertical-align: middle;
+}
+
+.contact_wrap {
+ text-align: center;
+ padding-top: 15px;
+}
+
+.contact_wrap a {
+ font-size: 15px;
+ color: #2f302c;
+ font-weight: bold;
+ text-decoration: none;
+ display: inline-block;
+ padding: 10px;
+ min-width: 40px;
+ border-radius: 5px;
+}
+
+.contact_wrap a.bg1 {
+ background-color: #bbedc8;
+}
+
+.contact_wrap a.bg2 {
+ background-color: #9bddbe;
+}
+
+.contact_wrap a.bg3 {
+ background-color: #ccf2cb;
+}
+
+.contact_wrap img {
+ height: 15px;
+ padding-right: 5px;
+ vertical-align: middle;
+ position: relative;
+ top: -2px;
+}
+
+.date_wrap {
+ margin: 0 15px;
+ padding: 20px 0 0 0;
+ text-align: left;
+ font-size: 13px;
+}
+
+.date_wrap img {
+ height: 15px;
+ vertical-align: middle;
+ position: relative;
+ top: -2px;
+ padding-right: 5px;
+}
+
+.addr_wrap {
+ margin: 0 15px;
+ padding: 10px 0;
+ text-align: left;
+ font-size: 13px;
+}
+
+.addr_wrap img {
+ height: 15px;
+ vertical-align: middle;
+ position: relative;
+ top: -2px;
+ padding-right: 5px;
+}
+
+.map_wrap {
+ margin: 0 15px;
+ height: 200px;
+ background-color: #ddd;
+ text-align: center;
+ font-size: 14px;
+}
+
+.tras_wrap {
+ margin: 0 15px;
+ font-size: 14px;
+ padding-bottom: 20px;
+}
+
+.tras_wrap div {
+ padding-top: 10px;
+}
+
+.tras_wrap div.what {
+ color: #888;
+}
+
+.tras_wrap div.is {
+ color: #8d968c;
+ font-weight: bold;
+ margin: 0 20px;
+}
+
+.what table.how {
+ white-space:nowrap;
+ color: #888;
+}
+
+.tras_wrap img {
+ height: 14px;
+ vertical-align: middle;
+ position: relative;
+ top: -3px;
+ padding-right: 5px;
+}
+.copy {
+ font-size:12px;
+ color:#888;
+ text-align:center;
+ padding-top:15px;
+ padding-bottom:15px;
+}
+.slick-prev,.slick-next {
+ display:none !important;
+}
+</style>
+</head>
+<body>
+ <div id="wrap">
+  <div class="slide_wrap">
+   <div id="autoplay" style="display:none;">
+    <!-- //이미지 추가 -->
+    <img src="https://png.pngtree.com/element_origin_min_pic/16/08/20/1457b7f4ca5302a.jpg" class="img100" />
+    <img src="https://cdn.pixabay.com/photo/2015/11/16/22/39/balloon-1046658__340.jpg" class="img100" />
+    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg" class="img100" />
+   </div>
+  </div>
+  <div class="content_wrap">
+   <h1><img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack/110/Party-Poppers-128.png" alt="icon finder free icon" />결혼식에 초대합니다<img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack/110/Party-Poppers-128.png" alt="icon finder free icon" /></h1>
+   CONTENT..<br />
+   CONTENT..<br />
+   CONTENT..<br />
+    CONTENT..<br />
+   CONTENT..
+  </div>
+  <div class="contact_wrap">
+   <a href="tel:010-1234-5678" class="bg1"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-glyph-128.png" alt="tel">신랑전화</a>
+   <a href="tel:010-1234-5678" class="bg2"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-glyph-128.png" alt="tel">신부전화</a>
+   <a href="#" class="bg3"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/common-email-envelope-mail-outline-stroke-128.png" alt="email" />이메일</a>
+   <!-- <a href="mailto:@naver.com" class="bg3"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/common-email-envelope-mail-outline-stroke-128.png" alt="email" />이메일</a> -->
+  </div>
+  <div class="date_wrap">
+   <span><img src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-40-128.png" alt="time" />초대일시 : <strong>2018년 10월 28일(일요일)  오후 1시</strong></span>
+  </div>
+  <div class="addr_wrap">
+   <span><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="place" />초대장소 : <strong>웨딩스퀘어</strong> | 서울특별시 광진구 광나루로56길 85 강변테크노마트 3층</span>
+  </div>
+  <div class="map_wrap" id="map"></div>
+  <div class="tras_wrap">
+   <div>
+    <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/subway-128.png" alt="car" />지하철 이용시 <span>2호선 강변역 하차 (테크노마트 판매동 지하 1층과 직접 연결)</span></div>        
+    <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_directions_bus_48px-128.png" alt="bus" />버스 이용시
+    <table cellspacing="0" cellpadding="0" style="white-space:nowrap;">
+      <colgroup>
+      <col width="30%">
+      <col width="70%">
+       </colgroup>
+       <tbody>
+         <tr rowspan="2">
+          <td>
+           서울버스
+          </td>
+          <td>
+           지선버스 : 2224, 3212, 3214
+          </td>
+         </tr>
+         <tr>
+          <td>           
+          </td>
+          <td>
+           마을버스 : 강동01, 광진01, 광진03, 광진04
+          </td>
+         </tr>
+         <tr rowspan="4">
+          <td>
+           경기버스
+          </td>
+          <td>
+            일반버스 : 1, 1-1, 1-2, 9, 9-1, 13, 13-2, 15, 91, 92,93, 95,              
+          </td>
+         </tr>
+         <tr>
+          <td>          
+          </td>
+          <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;96, 97, 112, 112-1, 2000-1, 2000-3, 2000-4
+          </td>
+         </tr>
+         <tr rowspan="2">
+           <td></td>
+           <td>직행버스 : 11, 1112, 1113, 1113-1, 1113-2, 1117,</td>
+         </tr>
+         <tr>
+           <td></td>
+           <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1650, 1660, 5600, 5700</td>
+         </tr>
+         <tr>
+           <td>공항버스 :</td>
+           <td>6705</td>
+         </tr>
+       </tbody>
+    </table>
+     </div>
+     <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_directions_car_48px-128.png" alt="car" />자가용 이용시 <span>네비게이션에 강변역 또는 강변테크노마트로 검색</span></div>        
+     <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/solid-amenities-icon-set/64/Parking_2-128.png" alt="parking" />주차안내 <span>강변 테크노마트 지하주차장 이용</span></div>         
+     <div class="what"><img src="https://cdn4.iconfinder.com/data/icons/dot/128/escalator_2.png" alt="inner" />테크노마트내 이동시  <span>엘리베이터가 혼잡하므로, 에스컬레이터를 이용하시면 더욱 편리합니다.</span></div>    
+     </div>
+   </div>
+  </div>
+  <div class="copy">
+   ⓒ Copyright 2018, 감사합니다.
+  </div>
+ </div> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+ <script>
+ var latlng = "37.536238, 127.095917"; //구글맵에서 위치 검색 후, 맵을 클릭하면 나오는 하단의 좌표를 입력한다.
+
+ function initMap() {
+  if (latlng.length <= 0)
+   return false;
+  arr = latlng.split(",");
+  if (arr.length <= 1)
+   return false;
+
+  var myLatLng = {
+   lat : parseFloat($.trim(arr[0])),
+   lng : parseFloat($.trim(arr[1]))
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+   zoom : 17,
+   center : myLatLng
+  });
+  var arr = [];
+
+  new google.maps.Marker({
+   position : myLatLng,
+   map : map
+  });
+ }
+ $(function(e) {
+  initMap();
+  
+  var targetEle = $("#autoplay");
+  targetEle.find("img").css("cssText" , "width:" + targetEle.width() + "px !important;");
+  targetEle.slick({
+   slidesToShow : 1,
+   slidesToScroll : 1,
+   autoplay : true,
+   autoplaySpeed : 2000,
+   dots: false,
+     infinite: true,
+     variableWidth: true
+  });
+  targetEle.css({"display" : "block"});
+  var tmpHeight = 0;
+  targetEle.find("img").each(function(k, v) {
+   var _this = $(this);
+   if( tmpHeight == 0 || tmpHeight > _this.height() ) {
+    tmpHeight = _this.height();
+   }
+  });
+  $(".slide_wrap").height(tmpHeight);
+ });
+ 
+ </script>
+</body>
+</html>
