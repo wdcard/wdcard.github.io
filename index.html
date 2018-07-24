@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <title>초대합니다 :-)</title>
@@ -9,13 +9,14 @@
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg"/>
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/11/16/22/39/balloon-1046658__340.jpg"/>
 <meta property="og:title" content="결혼식을  축하해 주세요."/>
-<meta property="og:description" content="2018년 10월 28일 오후 1시, 강변 테크노마트 웨딩스퀘어"/>
+<meta property="og:description" content="2018년 10월 28일(일요일) 오후 2시, 강변 테크노마트 웨딩스퀘어"/>
 
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="wdcard.github.io" />
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
 <style>
 * {
  margin: 0;
@@ -34,7 +35,7 @@ body {
 }
 
 #wrap {
- max-width: 500px;
+ max-width: 100%;
  margin: 0 auto;
  background-color: #fff;
  height: auto;
@@ -43,12 +44,13 @@ body {
 .img100 {
  max-width: 100%;
  width: auto !important;
- width: 100%;
+ heght:auto;
 }
 
 #autoplay, .slide_wrap {
+ max-width:100%;
+ height:auto;
  position:relative;
- width:100%;
  overflow:hidden;
 }
 
@@ -154,6 +156,10 @@ body {
  padding-bottom: 20px;
 }
 
+.cycle-slideshow{width:100%;}
+
+.cycle-slideshow img{width:100%; height:auto;}
+
 .tras_wrap div {
  padding-top: 10px;
 }
@@ -191,16 +197,15 @@ body {
  display:none !important;
 }
 </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
 </head>
 <body>
  <div id="wrap">
-  <div class="slide_wrap">
-   <div id="autoplay" style="display:none;">
-    <!-- //이미지 추가 -->
-    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg" class="img100" />
-    <img src="https://png.pngtree.com/element_origin_min_pic/16/08/20/1457b7f4ca5302a.jpg" class="img100" />
-    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg" class="img100" />
-   </div>
+  <div class="cycle-slideshow" style="overflow:hidden; position:relative; text-align: center;" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="120" data-cycle-auto-height="3:2">
+    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg"/>
+    <img src="https://png.pngtree.com/element_origin_min_pic/16/08/20/1457b7f4ca5302a.jpg"/>
+    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg"/>
   </div>
   <div class="content_wrap">
    <h1><img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack/110/Party-Poppers-128.png" alt="icon finder free icon" />결혼식에 초대합니다<img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack/110/Party-Poppers-128.png" alt="icon finder free icon" /></h1>
@@ -217,7 +222,7 @@ body {
    <!-- <a href="mailto:@naver.com" class="bg3"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/common-email-envelope-mail-outline-stroke-128.png" alt="email" />이메일</a> -->
   </div>
   <div class="date_wrap">
-   <span><img src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-40-128.png" alt="time" />초대일시 : <strong>2018년 10월 28일(일요일)  오후 1시</strong></span>
+   <span><img src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-40-128.png" alt="time" />초대일시 : <strong>2018년 10월 28일(일요일)  오후 2시</strong></span>
   </div>
   <div class="addr_wrap">
    <span><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="place" />초대장소 : <strong>웨딩스퀘어</strong> | 서울특별시 광진구 광나루로56길 85 강변테크노마트 3층</span>
@@ -225,7 +230,23 @@ body {
   <div class="map_wrap" id="map"></div>
   <div class="tras_wrap">
    <div>
-    <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/subway-128.png" alt="car" />지하철 이용시 <span>2호선 강변역 하차 (테크노마트 판매동 지하 1층과 직접 연결)</span></div>        
+    <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/subway-128.png" alt="car" />지하철 이용시    
+    <table cellspacing="0" cellpadding="0" style="white-space:nowrap;">
+      <colgroup>
+      <col width="30%">
+      <col width="70%">
+       </colgroup>
+       <tbody>
+         <tr rowspan="2">                   	
+          <td style="padding-left:1.5%;">
+           2호선 강변역 하차 (테크노마트 판매동 지하 1층과 직접 연결)
+          </td> 
+          <td>
+         	</td>         
+         </tr>         
+       </tbody>
+    </table>
+    </div>        
     <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_directions_bus_48px-128.png" alt="bus" />버스 이용시
     <table cellspacing="0" cellpadding="0" style="white-space:nowrap;">
       <colgroup>
@@ -234,7 +255,7 @@ body {
        </colgroup>
        <tbody>
          <tr rowspan="2">
-          <td>
+          <td style="padding-left:3.5%;">
            서울버스
           </td>
           <td>
@@ -249,7 +270,7 @@ body {
           </td>
          </tr>
          <tr rowspan="4">
-          <td>
+          <td style="padding-left:3.5%;">
            경기버스
           </td>
           <td>
@@ -272,7 +293,7 @@ body {
            <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1650, 1660, 5600, 5700</td>
          </tr>
          <tr>
-           <td>공항버스 :</td>
+           <td style="padding-left:3.5%;">공항버스</td>
            <td>6705</td>
          </tr>
        </tbody>
@@ -285,7 +306,7 @@ body {
    </div>
   </div>
   <div class="copy">
-   ⓒ Copyright 2018, 감사합니다.
+   ⓒ Copyright 2018, 안집사.
   </div>
  </div> 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -318,27 +339,6 @@ body {
  }
  $(function(e) {
   initMap();
-  
-  var targetEle = $("#autoplay");
-  targetEle.find("img").css("cssText" , "width:" + targetEle.width() + "px !important;");
-  targetEle.slick({
-   slidesToShow : 1,
-   slidesToScroll : 1,
-   autoplay : true,
-   autoplaySpeed : 2000,
-   dots: false,
-     infinite: true,
-     variableWidth: true
-  });
-  targetEle.css({"display" : "block"});
-  var tmpHeight = 0;
-  targetEle.find("img").each(function(k, v) {
-   var _this = $(this);
-   if( tmpHeight == 0 || tmpHeight > _this.height() ) {
-    tmpHeight = _this.height();
-   }
-  });
-  $(".slide_wrap").height(tmpHeight);
  });
  
  </script>
