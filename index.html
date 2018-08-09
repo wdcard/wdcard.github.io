@@ -407,6 +407,7 @@ var placeNm = "웨딩스퀘어";
 var floorHall="4층 아모르홀";
 var description2 = "[일시] " + wdDayKr + "\n" + "[장소] " + placeNm + " " + floorHall;
 var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요.\n";
+var description3 = groomNm+" ♥ "+brideNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요\n[일시] "+wdDayKr+"\n"+"[장소] "+placeNm+" "+floorHall;
 var siteDomain = "https://wdcard.github.io";
 var myMbURLforFB = "https://wdcard.github.io";
 
@@ -501,7 +502,7 @@ $("head title").text(title);
 		        appid : "wdcard.github.io",
 		        appver : "3.0",
 		        apiver : "1.0",
-		        appname : description,
+		        appname : description3,
 		        urlinfo : JSON.stringify({
 		        	title : brideNm + ' ♡ ' + groomNm,
 		        	desc : myMbURLforFB,
