@@ -544,6 +544,31 @@ function drawMap(x,y,id,zm){
     map: map
   });
   
+  var contentString = [
+        '<div class="iw_inner">',
+        '   <h3>웨딩스퀘어</h3>',
+        '   <p>서울특별시 광진구 광나루로56길 85 테크노마트 4층<br />',
+        '       <img src="/image/amorhall.jpg" width="55" height="55" alt="웨딩스퀘어 4층 아모르홀" class="thumb" /><br />',
+        '       02-3424-7000 | 결혼 &gt; 예식장<br />',
+        '       <a href="https://wswedding.modoo.at" target="_blank">wswedding.modoo.at/</a>',
+        '   </p>',
+        '</div>'
+    ].join('');
+
+   var infowindow = new naver.maps.InfoWindow({
+        content: contentString
+   });
+
+   naver.maps.Event.addListener(marker, "click", function(e) {
+    if (infowindow.getMap()) {
+        infowindow.close();
+    } else {
+        infowindow.open(map, marker);
+    }
+   });
+
+   infowindow.open(map, marker);
+  
   // var marker = new naver.maps.Marker({
   //   map: map,
   //   position: position,
