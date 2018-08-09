@@ -540,28 +540,28 @@ function drawMap(x,y,id,zm){
    });
   
   var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(x,y),
+    position: position,
     map: map
   });
-  /*
-   var marker = new naver.maps.Marker({
-     map: map,
-     position: position,
-     icon: {
-        path: [
-            new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
-            new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
-        ],
-        style: "closedPath",
-        anchor: new naver.maps.Point(23, 103),
-        fillColor: '#ff0000',
-        fillOpacity: 1,
-        strokeColor: '#000000',
-        strokeStyle: 'solid',
-        strokeWeight: 3
-    }
-    */
-});
+  
+  // var marker = new naver.maps.Marker({
+  //   map: map,
+  //   position: position,
+  //   icon: {
+  //      path: [
+  //          new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
+  //          new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
+  //      ],
+  //      style: "closedPath",
+  //      anchor: new naver.maps.Point(23, 103),
+  //      fillColor: '#ff0000',
+  //      fillOpacity: 1,
+  //      strokeColor: '#000000',
+  //      strokeStyle: 'solid',
+  //     strokeWeight: 3
+  //  }
+  
+//});
 
 }
 
