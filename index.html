@@ -538,7 +538,12 @@ function drawMap(x,y,id,zm){
     center: position,
     zoom: zm
    });
-
+  
+  var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(x,y),
+    map: map
+  });
+  /*
    var marker = new naver.maps.Marker({
      map: map,
      position: position,
@@ -555,6 +560,7 @@ function drawMap(x,y,id,zm){
         strokeStyle: 'solid',
         strokeWeight: 3
     }
+    */
 });
 
 }
