@@ -323,13 +323,17 @@ ul{
   <div class="copy">
    ⓒ Copyright 2018, 안집사.
   </div>
- </div> 
+ </div>
+ <div id="ZOOM_LAYER" class="map_zoom">
+	<div class="top_bar"><p class="btn_close">닫기</p></div>
+	<div id="MAP_CANVAS_FS" class="map_fs"></div>
+</div> 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  <script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script> 
 <script charset="UTF-8">
 	
-window.onload = function() {
+var _scrollTop;
 		
 var HOME_PATH = window.HOME_PATH || '.';
 var position = new naver.maps.LatLng(37.5357104,127.0958645);
@@ -357,6 +361,8 @@ var marker = new naver.maps.Marker({
     }
 });
 
+$(document).ready(function(){
+	
     $(".zoom").on("click", function(){
 			_scrollTop = $(document).scrollTop();
 			$("#ZOOM_LAYER").css("z-index",100).show();
@@ -368,7 +374,12 @@ var marker = new naver.maps.Marker({
 			$(document).scrollTop(_scrollTop);
 			$("#ZOOM_LAYER").hide();
 		});
-}			
+})
+
+
+
+  
+		
 </script>
 </body>
 </html>
