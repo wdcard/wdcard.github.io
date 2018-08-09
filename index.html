@@ -369,6 +369,7 @@ $(document).ready(function(){
 			_scrollTop = $(document).scrollTop();
 			$("#ZOOM_LAYER").css("z-index",100).show();
 			$("#ZOOM_LAYER .top_bar").show();
+			$("#MAP_CANVAS_FS").append($("#map").html());
 			$("#wrap").hide();
 		});
 		$("#ZOOM_LAYER .btn_close").on("click", function(){
