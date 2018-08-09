@@ -206,6 +206,7 @@ ul{
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=xkXOhCd_z7YWVrVqRxl5&submodules=geocoder"></script>
 </head>
 <body>
  <div id="wrap">
@@ -234,7 +235,10 @@ ul{
   <div class="addr_wrap">
    <span><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="place" />초대장소 : <strong>웨딩스퀘어</strong> | 서울특별시 광진구 광나루로56길 85 강변테크노마트 3층</span>
   </div>
-  <div class="map_wrap" id="map"></div>
+  <!-- <div class="map_wrap" id="map"></div> -->
+ <!-- <div id="daumRoughmapContainer1532880829624" class="root_daum_roughmap root_daum_roughmap_landing"></div> -->
+<div id="map" style="width:100%;height:400px;">	
+</div>
   <div class="tras_wrap">
    <div>
     <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/subway-128.png" alt="car" /><font color="#fb6318">지하철 이용시</font>    
@@ -286,35 +290,34 @@ ul{
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  <script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
- <script>
- var latlng = "37.536102, 127.095444"; //구글맵에서 위치 검색 후, 맵을 클릭하면 나오는 하단의 좌표를 입력한다.
+<script charset="UTF-8">
+	
+	var HOME_PATH = window.HOME_PATH || '.';
+  var position = new naver.maps.LatLng(37.5349414,127.0935148);
 
- function initMap() {
-  if (latlng.length <= 0)
-   return false;
-  arr = latlng.split(",");
-  if (arr.length <= 1)
-   return false;
+var map = new naver.maps.Map('map', {
+    center: position,
+    zoom: 10
+});
 
-  var myLatLng = {
-   lat : parseFloat($.trim(arr[0])),
-   lng : parseFloat($.trim(arr[1]))
-  };
-  var map = new google.maps.Map(document.getElementById('map'), {
-   zoom : 17,
-   center : myLatLng
-  });
-  var arr = [];
-
-  new google.maps.Marker({
-   position : myLatLng,
-   map : map
-  });
- }
- $(function(e) {
-  initMap();
- });
- 
- </script>
+var marker = new naver.maps.Marker({
+    map: map,
+    position: position,
+    icon: {
+        path: [
+            new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
+            new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
+        ],
+        style: "closedPath",
+        anchor: new naver.maps.Point(23, 103),
+        fillColor: '#ff0000',
+        fillOpacity: 1,
+        strokeColor: '#000000',
+        strokeStyle: 'solid',
+        strokeWeight: 3
+    }
+});
+	
+</script>
 </body>
 </html>
