@@ -412,6 +412,9 @@ var siteDomain = "https://wdcard.github.io";
 var myMbURLforFB = "https://wdcard.github.io";
 
 $("head title").text(title);
+
+Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
+
 	  drawMap(fxx,fyy,fid,fzm);
 	
     $(".zoom").on("click", function(){
@@ -443,7 +446,7 @@ $("head title").text(title);
 		
 		//카카오 링크 API v2.0 적용
 		//Kakao.init('4589cfd714e084b6776fd0c8aa627f40');
-		  Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
+		  
         function kakaotalk() {
             Kakao.Link.createDefaultButton({
                 container: '#KAKAOTALK',
