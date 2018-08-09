@@ -367,15 +367,7 @@ var fxx = 37.5357104;
 var fyy = 127.0958645;
 var fid = 'map';
 var fzm = 11;
-var brideNm = '김혜정';
-var groomNm = '안세훈';
-var title = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장";
-var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.";
-var description2 = "[일시] " + wdDayKr+ " " + wdWeekKr + " " + wdTimeKr + "\n" + "[장소] " + placeNm + " " + floorHall;
-var description = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요\n;
-var siteDomain = "https://wdcard.github.io/";
-var myMbURLforFB = "https://wdcard.github.io/";
-$("head title").text(title);
+
 //var HOME_PATH = window.HOME_PATH || '.';
 //var position = new naver.maps.LatLng(37.5357104,127.0958645);
 
@@ -404,6 +396,20 @@ $("head title").text(title);
 
 $(document).ready(function(){
 	  
+var brideNm = '김혜정';
+var groomNm = '안세훈';
+var title = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장";
+var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.";
+
+var wdDayKr = "2018년 10월 28일(일요일) 오후 12시 20분";
+var placeNm = "웨딩스퀘어";
+var floorHall="4층 아모르홀";
+var description2 = "[일시] " + wdDayKr + "\n" + "[장소] " + placeNm + " " + floorHall;
+var description = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요\n;
+var siteDomain = "https://wdcard.github.io/";
+var myMbURLforFB = "https://wdcard.github.io/";
+
+$("head title").text(title);
 	  drawMap(fxx,fyy,fid,fzm);
 	
     $(".zoom").on("click", function(){
