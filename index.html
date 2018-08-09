@@ -407,8 +407,8 @@ var placeNm = "웨딩스퀘어";
 var floorHall="4층 아모르홀";
 var description2 = "[일시] " + wdDayKr + "\n" + "[장소] " + placeNm + " " + floorHall;
 var description = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요.\n";
-var siteDomain = "https://wdcard.github.io/";
-var myMbURLforFB = "https://wdcard.github.io/";
+var siteDomain = "https://wdcard.github.io";
+var myMbURLforFB = "https://wdcard.github.io";
 
 $("head title").text(title);
 	  drawMap(fxx,fyy,fid,fzm);
@@ -497,13 +497,13 @@ $("head title").text(title);
 		$("#KAKAOSTORY").on("click",function(){
 			
 		    kakao.link("story").send({   
-		        post : groomNm + ' ♡ ' + brideNm + "의 모바일청첩장입니다.\n\n" + myMbURL,
+		        post : brideNm + ' ♡ ' +  + "의 모바일청첩장입니다.\n\n" + groomNm,
 		        appid : "wdcard.github.io",
 		        appver : "3.0",
 		        apiver : "1.0",
 		        appname : description,
 		        urlinfo : JSON.stringify({
-		        	title : groomNm + ' ♡ ' + brideNm,
+		        	title : brideNm + ' ♡ ' + groomNm,
 		        	desc : myMbURLforFB,
 		        	imageurl : [KSimgSrc],
 		        	type : "article"
