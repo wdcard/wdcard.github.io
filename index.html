@@ -324,10 +324,12 @@ ul{
    ⓒ Copyright 2018, 안집사.
   </div>
  </div>
+ 
  <div id="ZOOM_LAYER" class="map_zoom">
 	<div class="top_bar"><p class="btn_close">닫기</p></div>
 	<div id="MAP_CANVAS_FS" class="map_fs"></div>
-</div> 
+</div>
+ 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  <script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script> 
@@ -372,6 +374,7 @@ $(document).ready(function(){
 		$("#ZOOM_LAYER .btn_close").on("click", function(){
 			$("#wrap").show();
 			$(document).scrollTop(_scrollTop);
+			$("#MAP_CANVAS_FS").attr('style','overflow:scroll').append("<a href='https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1' width='auto' height='100%' />");
 			$("#ZOOM_LAYER").hide();
 		});
 })
