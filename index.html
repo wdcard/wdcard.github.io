@@ -367,6 +367,15 @@ var fxx = 37.5357104;
 var fyy = 127.0958645;
 var fid = 'map';
 var fzm = 11;
+var brideNm = '김혜정';
+var groomNm = '안세훈';
+var title = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장";
+var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.";
+var description2 = "[일시] " + wdDayKr+ " " + wdWeekKr + " " + wdTimeKr + "\n" + "[장소] " + placeNm + " " + floorHall;
+var description = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요\n;
+var siteDomain = "https://wdcard.github.io/";
+var myMbURLforFB = "https://wdcard.github.io/";
+$("head title").text(title);
 //var HOME_PATH = window.HOME_PATH || '.';
 //var position = new naver.maps.LatLng(37.5357104,127.0958645);
 
@@ -412,6 +421,106 @@ $(document).ready(function(){
 			$("#MAP_CANVAS_FS").append($("#map").html());
 			$("#ZOOM_LAYER").hide();
 		});
+		
+		var KTimgSrc = "https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg";
+		var img = new Image();
+		img.src = KTimgSrc;
+		img.onload = function(){
+			kakaotalk();
+		}
+		//img.onerror = function(){
+	//		KTimgSrc = _PHOTO_OUT_DIR+mIdx+"/"+_MAIN_PHOTO_PREFIX+_KAKAOTALK_PHOTO_PREFIX+_IMG_EXT+"?"+nowTimestamp();
+//			kakaotalk();
+//		}
+		
+		//카카오 링크 API v2.0 적용
+		Kakao.init('4589cfd714e084b6776fd0c8aa627f40');
+        function kakaotalk() {
+            Kakao.Link.createDefaultButton({
+                container: '#KAKAOTALK',
+                objectType: 'feed',
+                content: {
+                    title: description1,
+                    description: description2,
+                    imageUrl: KTimgSrc,
+                    link: {
+                        mobileWebUrl: myMbURLforFB + '&' + nowTimestamp(),
+                        webUrl: myMbURLforFB + '&' + nowTimestamp()
+                    }
+                },
+                buttons: [
+                    {
+                        title: "청첩장 바로가기",
+                        link: {
+                            mobileWebUrl: myMbURLforFB + '&' + nowTimestamp(),
+                            webUrl: myMbURLforFB + '&' + nowTimestamp()
+                        }
+                    }
+                ]
+            });
+        }
+		// //카카오 링크 v1.0
+		// function kakaotalk() {
+		// 	Kakao.Link.createTalkLinkButton({
+		// 		container: '#KAKAOTALK',
+		// 		label: description,
+		// 		image: {
+		// 			src: siteDomain + KTimgSrc,
+		// 			width: _KAKAO_PHOTO_WIDTH,
+		// 			height: _KAKAO_PHOTO_HEIGHT
+		// 		},
+		// 		webButton: {
+		// 			text: "청첩장 바로가기",
+		// 			url: myMbURLforFB + '&' + nowTimestamp()
+		// 		}
+		// 	});
+		// }
+		
+		//카카오스토리용 이미지 (카카오톡과 같은 이미지 사용)
+		var KSimgSrc = "https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg";
+		var img = new Image();
+		img.src = KSimgSrc;
+		img.onload = function(){
+		}
+		img.onerror = function(){
+			KSimgSrc = _PHOTO_OUT_DIR+mIdx+"/"+_MAIN_PHOTO_PREFIX+_KAKAOSTORY_PHOTO_PREFIX+_IMG_EXT+"?"+nowTimestamp();
+		}
+		
+		//카카오스토리
+		$("#KAKAOSTORY").on("click",function(){
+			
+		    kakao.link("story").send({   
+		        post : groomNm + ' ♡ ' + brideNm + "의 모바일청첩장입니다.\n\n" + myMbURL,
+		        appid : "wdcard.github.io",
+		        appver : "3.0",
+		        apiver : "1.0",
+		        appname : description,
+		        urlinfo : JSON.stringify({
+		        	title : groomNm + ' ♡ ' + brideNm,
+		        	desc : myMbURLforFB,
+		        	imageurl : [KSimgSrc],
+		        	type : "article"
+		        })
+		    });
+		});
+		
+		//페이스북
+		$("#FACEBOOK").on("click",function(){
+			var strUrl = "http://www.facebook.com/sharer.php?u="+encodeURIComponent(myMbURLforFB)+"&t="+encodeURIComponent( brideNm + ' ♡ ' + groomNm + '의 청첩장입니다'); // 페이스북 링크등록 로봇때문에 http://www.card-market.co.kr/USERID 사용불가
+			window.open(strUrl);
+		});
+		
+		
+		
+		//밴드
+		$("#BAND").on("click", function() {
+			var text = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장입니다.\n" + myMbURLforFB;
+			var strUrl = "http://band.us/plugin/share?body="+encodeURIComponent(text);
+			window.open(strUrl);
+			
+			//window.location.href = "bandapp://create/post?text="+encodeURIComponent(text);
+		});
+		
 });
 
 
