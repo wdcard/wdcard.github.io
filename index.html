@@ -204,11 +204,31 @@ ul{
 	list-style:none;
 	padding-left:0px;
 }
+.location {padding:50px 0 0; background:#fff;}
+.location .con {position:relative; padding:23px 70px 15px 10px; letter-spacing:-0.05em; border-top:3px solid #30bb37; background:#f6f6f6;}
+.location .con strong {display:block; line-height:23px; margin-bottom:2px; font-size:16px; color:#2f2f2f;}
+.location .con p {position:relative; line-height:18px; font-size:13px; color:#6a6a6a;}
+.location .con .hall_add {padding-left:47px;}
+.location .con .hall_add i {position:absolute; left:0; top:0;}
+.location .con i {font-style:normal; color:#30bb37;}
+.location .con a {position:absolute; right:10px; bottom:17px;}
+.location .map {position:relative; width:100%; height:auto; margin-top:10px; overflow:hidden;}
+.location .txt {padding:10px; text-align:center; font-size:11px; color:#f1f1f1; background:#363636;}
+.location .naver {padding:15px 0 20px; text-align:center; background:#f6f6f6;}
+.location .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;}
+.location .naver a span {font-weight:normal; font-size:13px;}
+.location .naver img {display:inline-block; margin:6px 2px 0 0; vertical-align:top;}
 
-.naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;}
-.naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;}
-.naver a span {font-weight:normal; font-size:13px;}
-.naver img {display:inline-block; margin:6px 2px 0 0; vertical-align:top;}
+.map_zoom {position:absolute; top:0; width:100%; height:100%; z-index:-10; text-align:center; background-color:#ddd; overflow:hidden; border:0px solid red;}
+.map_zoom .top_bar {position:absolute; top:0; left:0; width:100%; height:38px; background:rgba(0,0,0,0.8); z-index:10; display:none;}
+.map_zoom .top_bar .btn_close {color:#fff; margin:0 auto; line-height:38px;}
+.map_fs {position:relative; top:0; width:100%; height:100%;}
+
+.img_zoom {position:absolute; top:0; width:100%; height:100%; z-index:-5; text-align:center; background-color:#000; overflow:hidden; border:0px solid red; display:table;}
+.img_zoom .top_bar {position:absolute; top:0; left:0; width:100%; height:38px; background:rgba(0,0,0,0.8); z-index:10; display:none;}
+.img_zoom .top_bar .btn_close {color:#fff; margin:0 auto; line-height:38px;}
+.img_zoom .viewer {vertical-align:middle; width:100%; height:100%;}
+
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="http://malsup.github.com/jquery.cycle2.js"></script>
@@ -245,13 +265,23 @@ ul{
  <!-- <div id="daumRoughmapContainer1532880829624" class="root_daum_roughmap root_daum_roughmap_landing"></div> -->
 <div id="map" style="width:100%;height:400px;">	
 </div>
-<div class="naver">
+<div class="location">
+		<div class="con">
+			<strong class="hall_nm PL_NM">000000000</strong>
+			<p class="hall_add"><i>Address : </i> <span class="PL_ADDR">0000 00000 000 000-0000</span></p>
+			<p class="hall_tel PL_TEL"><i>tel : </i> <span class="tel PL_TEL_NO">02-0000-0001</span></p>
+			<a class="btn" href="tel:" id="PL_TEL_NO"><img src="img/tel_btn.png" width="47" height="auto" /></a>
+		</div>
+		<p id="MAP_CANVAS" class="map"></p>
+		<p class="txt">대중교통 및 자동차 안내는 네이버 길찾기를 누르신 후 출발지를 검색하셔야 이용가능 합니다.</p>
+		<div class="naver">
 			<a class="zoom">크게보기</a>
 			<a href="https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1" target="_blank">
 				<img src="img/location_point.png" width="13" height="21" /><span>DIRECTION</span>
 				네이버 길찾기
 			</a>
 		</div>
+	</div>
   <div class="tras_wrap">
    <div>
     <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/subway-128.png" alt="car" /><font color="#fb6318">지하철 이용시</font>    
@@ -330,7 +360,19 @@ var marker = new naver.maps.Marker({
         strokeWeight: 3
     }
 });
-	
+
+    $(".zoom").on("click", function(){
+			_scrollTop = $(document).scrollTop();
+			$("#ZOOM_LAYER").css("z-index",100).show();
+			$("#ZOOM_LAYER .top_bar").show();
+			$("#wrap").hide();
+		});
+		$("#ZOOM_LAYER .btn_close").on("click", function(){
+			$("#wrap").show();
+			$(document).scrollTop(_scrollTop);
+			$("#ZOOM_LAYER").hide();
+		});
+			
 </script>
 </body>
 </html>
