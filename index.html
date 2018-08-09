@@ -335,8 +335,10 @@ ul{
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script> 
 <script charset="UTF-8">
 	
-	var HOME_PATH = window.HOME_PATH || '.';
-  var position = new naver.maps.LatLng(37.5357104,127.0958645);
+window.onload = function() {
+		
+var HOME_PATH = window.HOME_PATH || '.';
+var position = new naver.maps.LatLng(37.5357104,127.0958645);
 
 var map = new naver.maps.Map('map', {
     center: position,
@@ -372,7 +374,7 @@ var marker = new naver.maps.Marker({
 			$(document).scrollTop(_scrollTop);
 			$("#ZOOM_LAYER").hide();
 		});
-			
+}			
 </script>
 </body>
 </html>
