@@ -375,7 +375,7 @@ $(document).ready(function(){
 			_scrollTop = $(document).scrollTop();
 			$("#ZOOM_LAYER").css("z-index",100).show();
 			$("#ZOOM_LAYER .top_bar").show();
-      drawMap(x,y,'MAP_CANVAS_FS',12);
+      drawMap(fxx,fyy,'MAP_CANVAS_FS',12);
 			//$("#MAP_CANVAS_FS").attr('style','overflow:scroll').append($("#map").html());
 			$("#wrap").hide();
 		});
@@ -386,7 +386,7 @@ $(document).ready(function(){
 			$("#MAP_CANVAS_FS").append($("#map").html());
 			$("#ZOOM_LAYER").hide();
 		});
-})
+});
 
 
 function drawMap(x,y,id,zm){
@@ -415,6 +415,7 @@ function drawMap(x,y,id,zm){
         strokeWeight: 3
     }
 });
+
 }
 
   
