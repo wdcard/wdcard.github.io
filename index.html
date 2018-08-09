@@ -336,65 +336,46 @@ ul{
 <script charset="UTF-8">
 	
 var _scrollTop;
-		
+
+var fxx = 37.5357104;		
+var fyy = 127.0958645;
+var fid = 'map';
+var fzm = 11;
 //var HOME_PATH = window.HOME_PATH || '.';
-var position = new naver.maps.LatLng(37.5357104,127.0958645);
+//var position = new naver.maps.LatLng(37.5357104,127.0958645);
 
-var map = new naver.maps.Map('map', {
-    center: position,
-    zoom: 11
-});
+//var map = new naver.maps.Map('map', {
+//    center: position,
+//    zoom: 11
+//});
 
-var marker = new naver.maps.Marker({
-    map: map,
-    position: position,
-    icon: {
-        path: [
-            new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
-            new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
-        ],
-        style: "closedPath",
-        anchor: new naver.maps.Point(23, 103),
-        fillColor: '#ff0000',
-        fillOpacity: 1,
-        strokeColor: '#000000',
-        strokeStyle: 'solid',
-        strokeWeight: 3
-    }
-});
+//var marker = new naver.maps.Marker({
+//    map: map,
+//    position: position,
+//    icon: {
+//        path: [
+ //           new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
+ //           new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
+ //       ],
+ //       style: "closedPath",
+ //       anchor: new naver.maps.Point(23, 103),
+ //       fillColor: '#ff0000',
+  //      fillOpacity: 1,
+   //     strokeColor: '#000000',
+    //    strokeStyle: 'solid',
+     //   strokeWeight: 3
+   // }
+//});
 
 $(document).ready(function(){
+	  
+	  drawMap(fxx,fyy,fid,fzm);
 	
     $(".zoom").on("click", function(){
 			_scrollTop = $(document).scrollTop();
 			$("#ZOOM_LAYER").css("z-index",100).show();
 			$("#ZOOM_LAYER .top_bar").show();
-			
-			var position = new naver.maps.LatLng(37.5357104,127.0958645);
-
-     var map = new naver.maps.Map('MAP_CANVAS_FS', {
-           center: position,
-    zoom: 11
-});
-
-var marker = new naver.maps.Marker({
-    map: map,
-    position: position,
-    icon: {
-        path: [
-            new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
-            new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
-        ],
-        style: "closedPath",
-        anchor: new naver.maps.Point(23, 103),
-        fillColor: '#ff0000',
-        fillOpacity: 1,
-        strokeColor: '#000000',
-        strokeStyle: 'solid',
-        strokeWeight: 3
-    }
-});
-
+      drawMap(x,y,'MAP_CANVAS_FS',12);
 			//$("#MAP_CANVAS_FS").attr('style','overflow:scroll').append($("#map").html());
 			$("#wrap").hide();
 		});
@@ -408,6 +389,33 @@ var marker = new naver.maps.Marker({
 })
 
 
+function drawMap(x,y,id,zm){
+	   
+	 var position = new naver.maps.LatLng(x,y);
+
+   var map = new naver.maps.Map(id, {
+    center: position,
+    zoom: zm
+   });
+
+   var marker = new naver.maps.Marker({
+     map: map,
+     position: position,
+     icon: {
+        path: [
+            new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
+            new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
+        ],
+        style: "closedPath",
+        anchor: new naver.maps.Point(23, 103),
+        fillColor: '#ff0000',
+        fillOpacity: 1,
+        strokeColor: '#000000',
+        strokeStyle: 'solid',
+        strokeWeight: 3
+    }
+});
+}
 
   
 		
