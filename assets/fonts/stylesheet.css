@@ -1,0 +1,91 @@
+
+
+
+@font-face {
+    font-family: 'playfair_displayblack';
+    src: url('playfairdisplay-black-webfont.eot');
+    src: url('playfairdisplay-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('playfairdisplay-black-webfont.woff2') format('woff2'),
+         url('playfairdisplay-black-webfont.woff') format('woff'),
+         url('playfairdisplay-black-webfont.ttf') format('truetype'),
+         url('playfairdisplay-black-webfont.svg#playfair_displayblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('playfairdisplay-bold-webfont.eot');
+    src: url('playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('playfairdisplay-bold-webfont.woff') format('woff'),
+         url('playfairdisplay-bold-webfont.ttf') format('truetype'),
+         url('playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('playfairdisplay-regular-webfont.eot');
+    src: url('playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('playfairdisplay-regular-webfont.woff') format('woff'),
+         url('playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('roboto-black.eot');
+    src: url('roboto-black.eot?#iefix') format('embedded-opentype'),
+         url('roboto-black.woff2') format('woff2'),
+         url('roboto-black.woff') format('woff'),
+         url('roboto-black.ttf') format('truetype'),
+         url('roboto-black.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light.eot');
+    src: url('roboto-light.eot?#iefix') format('embedded-opentype'),
+         url('roboto-light.woff2') format('woff2'),
+         url('roboto-light.woff') format('woff'),
+         url('roboto-light.ttf') format('truetype'),
+         url('roboto-light.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'hammersmith_oneregular';
+    src: url('hammersmithone-webfont.eot');
+    src: url('hammersmithone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hammersmithone-webfont.woff2') format('woff2'),
+         url('hammersmithone-webfont.woff') format('woff'),
+         url('hammersmithone-webfont.ttf') format('truetype'),
+         url('hammersmithone-webfont.svg#hammersmith_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
