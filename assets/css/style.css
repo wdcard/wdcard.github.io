@@ -165,7 +165,8 @@ h5 {
 h1 {
     font-size: 4.375rem;
     line-height: 5.5rem;
-    color:#fff;
+    text-transform: uppercase;
+    font-family: 'playfair_displaybold','playfair_displayblack','Noto Sans KR';   
 }
 h2 {
     font-size:1.875rem;
@@ -581,7 +582,8 @@ input::-ms-input-placeholder {
     padding-top: 15px;
     padding-bottom: 20px;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
+    font-size: 1.275rem;
     color: #fff;
     font-weight: bold;
     font-family: 'robotoblack';
@@ -655,6 +657,10 @@ input::-ms-input-placeholder {
 .home .main_home h2{
     color: #fff;
     font-size:2rem;
+}
+.home .main_home h1{
+    color: #fff;
+    font-size:5rem;
 }
 .home .main_home p{
     color: #fff;
