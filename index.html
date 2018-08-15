@@ -1,359 +1,491 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-<title>초대합니다 :-)</title>
-<meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>초대합니다 :-)</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--        
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
-
-<meta property="og:site_name" content="wedding" />
-<meta property="og:image" content="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg"/>
-<meta property="og:image" content="https://cdn.pixabay.com/photo/2015/11/16/22/39/balloon-1046658__340.jpg"/>
-<meta property="og:title" content="결혼식을 축하해 주세요."/>
-<meta property="og:description" content="김혜정 ♥ 안세훈의 모바일청첩장"/>
-
+-->
+				<meta property="og:site_name" content="wedding" />
+				<meta property="og:image" content="assets/images/otimage.jpg"/>				
+				<meta property="og:title" content="결혼식을 축하해 주세요."/>
+				<meta property="og:description" content="김혜정 ♥ 안세훈의 모바일청첩장"/>
 
 
-<meta property="og:type" content="website" />
-<meta property="og:url" content="wdcard.github.io" />
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-<link rel="stylesheet" href="https://hangeul.naver.com/css/font_experience.css">
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="wdcard.github.io" />
 
-<style>
-* {
- margin: 0;
- padding: 0;
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
- -moz-tap-highlight-color: rgba(0, 0, 0, 0);
- -webkit-text-size-adjust: 100%;
-}
+        <link rel="stylesheet" href="assets/css/fonticons.css">
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
-html,body {
- height: 100%;
-}
 
-body {
- background-color: #eee;
-}
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
 
-#wrap {
- max-width: 100%;
- margin: 0 auto;
- background-color: #fff;
- height: auto;
-}
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-.img100 {
- max-width: 100%;
- width: auto !important;
- heght:auto;
-}
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
 
-#autoplay, .slide_wrap {
- max-width:100%;
- height:auto;
- position:relative;
- overflow:hidden;
-}
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=xkXOhCd_z7YWVrVqRxl5&submodules=geocoder"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div class="culmn">
+            <header id="main_menu" class="header navbar-fixed-top">            
+                <div class="main_menu_bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="nave_menu">
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#">
+                                            <!--    홈-->
+                                                <!--
+                                                <img src="assets/images/logo.png"/>
+                                                -->
+                                            </a>
+                                        </div>
 
-.content_wrap {
- font-size: 14px;
- text-align: center;
- padding-top: 15px;
- margin: 0 15px;
- color: #8d968c;
- line-height: 20px;
-}
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
 
-.content_wrap h1 {
- font-size: 15px;
- font-weight: bold;
- text-align: center;
- padding-bottom: 15px;
- color: #50a27f;
-}
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-.content_wrap h1 img {
- height: 40px;
- vertical-align: middle;
-}
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li><a href="#home">홈</a></li> 
+                                                <li><a href="#about">모시는글</a></li>
+                                                <li><a href="#portfolio">갤러리</a></li>
+                                                <li><a href="#service">오시는길</a></li>                                                 
+                                            </ul>
 
-.contact_wrap {
- text-align: center;
- padding-top: 15px;
-}
 
-.contact_wrap a {
- font-size: 15px;
- color: #2f302c;
- font-weight: bold;
- text-decoration: none;
- display: inline-block;
- padding: 10px;
- min-width: 40px;
- border-radius: 5px;
-}
+                                        </div>
 
-.contact_wrap a.bg1 {
- background-color: #bbedc8;
-}
+                                    </div>
+                                </nav>
+                            </div>	
+                        </div>
 
-.contact_wrap a.bg2 {
- background-color: #9bddbe;
-}
+                    </div>
 
-.contact_wrap a.bg3 {
- background-color: #ccf2cb;
-}
+                </div>
+            </header> <!--End of header -->
 
-.contact_wrap img {
- height: 15px;
- padding-right: 5px;
- vertical-align: middle;
- position: relative;
- top: -2px;
-}
 
-.date_wrap {
- margin: 0 15px;
- padding: 20px 0 0 0;
- text-align: left;
- font-size: 13px;
-}
 
-.date_wrap img {
- height: 15px;
- vertical-align: middle;
- position: relative;
- top: -2px;
- padding-right: 5px;
-}
 
-.addr_wrap {
- margin: 0 15px;
- padding: 10px 0;
- text-align: left;
- font-size: 13px;
-}
 
-.addr_wrap img {
- height: 15px;
- vertical-align: middle;
- position: relative;
- top: -2px;
- padding-right: 5px;
-}
+            <section id="home" class="home">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 ">
+                                <div class="main_home_slider text-center">
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="1ms">
+                                            <h2>안 세 훈 & 김 혜 정</h2>      
+                                            <h2>결혼합니다</h2>                                      
+                                            <div class="separator"></div>                                            
+                                            <h2>2018.10.28 일요일</h2>
+                                            <h2>낮 12시 20분</h2>
+                                            <h2>웨딩스퀘어 4층 아모르홀</h2>
+                                            <!--
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, 
+                                                nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a 
+                                                sit amet mauris. Morbi accumsan ipsum velit.</p>
+                                                
+                                            -->    
+                                            <!--    
+                                            <div class="home_btn">
+                                                <a href="" class="btn btn-primary">LEARN MORE</a>
+                                            </div>
+                                            -->
 
-.map_wrap {
- margin: 0 15px;
- height: 200px;
- background-color: #ddd;
- text-align: center;
- font-size: 14px;
-}
+                                        </div>
+                                    </div>
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="1ms">
+                                            <h2>We Are Awesome Creative Agency</h2>
+                                            <div class="separator"></div>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, 
+                                                nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a 
+                                                sit amet mauris. Morbi accumsan ipsum velit.</p>
+                                            <div class="home_btn">
+                                                <a href="" class="btn btn-primary">LEARN MORE</a>
+                                            </div>
 
-.tras_wrap {
- max-width: 100%;
- width: auto ;
- margin: 0 15px;
- font-size: 14px;
- padding-bottom: 20px;
-}
+                                        </div>
+                                    </div>
+                                    <div class="single_home_slider">
+                                        <div class="main_home wow fadeInUp" data-wow-duration="1ms">
+                                            <h2>We Are Awesome Creative Agency</h2>
+                                            <div class="separator"></div>
+                                            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, 
+                                                nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a 
+                                                sit amet mauris. Morbi accumsan ipsum velit.</p>
+                                            <div class="home_btn">
+                                                <a href="" class="btn btn-primary">LEARN MORE</a>
+                                            </div>
 
-.cycle-slideshow{width:100%;}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-.cycle-slideshow img{width:100%; height:auto;}
+           <section id="about" class="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="main_service_area sections text-center">
+                                <div class="row">
+                                    <div class="head_title text-center">
+                                        <h2><strong>모시는글</strong></h2>
+                                            <h4><strong>서로의 이름을 부르는 것 만으로도<br/>
+                                              사랑의 깊이를 확인할 수 있는 두 사람이<br/>
+																							꽃과 나무처럼 걸어와서<br/>
+																							서로의 모든것이 되기 위해<br/>
+																							오랜 기다림 끝에 혼례식을 치르는 날<br/>
+																							세상은 더욱 아름다워라<br/>
+                                            	 부부가 되기로 결심했습니다.<br/>
+                                            </strong></h4>      
+                                            <!-- <div class="separator2"></div> -->
+                                            <div class="separator5"></div>                                    
+                                    </div>
+                                    <div class="main_service_content">
+                                    <div class="col-sm-12">
+                                        	<div class="row">
+                                        		<div class="col-xs-6" style="text-align:center;">                                        	
+                                            <div class="single_service">
+                                            	  <div class="single_service_content">
+                                                    <h3><strong>안 세 훈</strong></h3>
+                                                    <h5><strong>GROOM</strong></h5>                                                                                                      
+                                                </div>                                             
+                                                <div class="single_service_icon" style="text-align:center;">
+                                                    <a href="tel:010-1234-5678"  title="전화걸기"><i class="fa fa-phone"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="sms:010-1234-5678" title="문자보내기"><i class="fa fa-envelope"></i></a>
+                                                </div>                                                                                           
+                                            </div>
+                                            </div>                                               
+                                            <div class="col-xs-6">                                        	
+                                            <div class="single_service"  style="text-align:center;">
+                                            	  <div class="single_service_content">
+                                                    <h3><strong>김 혜 정</strong></h3>
+                                                    <h5><strong>BRIDE</strong></h5>
+                                                </div>
+                                                <div class="single_service_icon" style="text-align:center;">
+                                                    <a href="tel:010-1234-5678"><i class="fa fa-phone"  title="전화걸기"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="sms:010-1234-5678" title="문자보내기"><i class="fa fa-envelope"></i></a>
+                                                </div>                                               
+                                            </div>
+                                            </div>                                                                                     
+                                        </div>
+                                    </div>
+                                  </div>      
+                                    <div class="border_devider"></div>
+                                    <div class="main_service_content">
+                                        <div class="col-xs-12">
+                                        	<div class="row align-items-center">
+                                        		<div class="col-xs-6">                                        	
+                                            <div class="single_service">
+                                            	  <div class="single_service_content">
+                                                    <h4><strong><신랑측 혼주></strong></h4>                                                    
+                                                </div>
+                                                <div class="single_service_icon">
+                                                    <p>아버지 <strong>아버지</strong><a href="tel:010-1234-5678" title="전화걸기"><i class="fa fa-phone"></i></a> <a href="sms:010-1234-5678" title="문자보내기"><i class="fa fa-envelope"></i></a></p>
+                                                </div>
+                                                <div class="single_service_icon">
+                                                    <p>어머니 <strong>어머니</strong><a href="tel:010-1234-5678" title="전화걸기"><i class="fa fa-phone"></i></a> <a href="sms:010-1234-5678" title="문자보내기"><i class="fa fa-envelope"></i></a></p>
+                                                </div>                                                
+                                            </div>
+                                            </div>
+                                            <div class="col-xs-6">                                        	
+                                            <div class="single_service">
+                                            	  <div class="single_service_content">
+                                                    <h4><strong><신부측 혼주></strong></h4>                                                    
+                                                </div>
+                                                <div class="single_service_icon">
+                                                    <p>아버지 <strong>아버지</strong><a href="tel:010-1234-5678" title="전화걸기"><i class="fa fa-phone"></i></a> <a href="sms:010-1234-5678" title="문자보내기"><i class="fa fa-envelope"></i></a></p>
+                                                </div>
+                                                <div class="single_service_icon">
+                                                    <p>어머니 <strong>어머니</strong><a href="tel:010-1234-5678" title="전화걸기"><i class="fa fa-phone"></i></a> <a href="sms:010-1234-5678" title="문자보내기"><i class="fa fa-envelope"></i></a></p>
+                                                </div>                                                
+                                            </div>
+                                            </div>                                           
+                                        </div>                                                                                                                                                          
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+             <section id="portfolio" class="portfolio">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="main_portfolio sections">
+                            <div class="head_title text-center">
+                                <h2>photo gallery</h2>
+                                <!-- <a href="">See All Project in dribbble <i class="fa fa-chevron-right"></i></a> -->                              
+                            </div> 
+                              <div class="main_portfolio_content text-center">
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf1.jpg" alt="" />
+                                        <div class="grid_item_overlay all_overlay">
+                                            <a href="assets/images/pf1.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf2.jpg" alt="" />
+                                        <div class="grid_item_overlay all_overlay">
+                                            <a href="assets/images/pf2.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf1.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf1.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf4.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf4.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf5.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf5.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf6.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf6.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf7.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf7.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf6.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf6.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf7.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf7.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf6.jpg" alt="" />
+                                        <div class="grid_item_overlay ">
+                                            <a href="assets/images/pf7.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf7.jpg" alt="" />
+                                        <div class="grid_item_overlay">
+                                            <a href="assets/images/pf6.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img src="assets/images/pf1.jpg" alt="" />
+                                        <div class="grid_item_overlay ">
+                                            <a href="assets/images/pf1.jpg" class="portfolio-img"> <i class="fa fa-picture-o"></i></a>
+                                        </div>
+                                    </div>
 
-.tras_wrap div {
- padding-top: 10px;
-}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-.tras_wrap div.what {
- color: #888;
-}
+           <section id="service" class="service">
+                <div class="container">
+                    <div class="row">
+                           <div class="col-sm-12">
+                            <div class="main_service_area sections1 text-center">
+                                    <p id="map" class="map"></p>
+																		<p class="txt">대중교통 및 자동차 안내는 네이버 길찾기를 누르신 후 출발지를 검색하셔야 이용가능 합니다.</p>
+																		<div class="naver">
+																			<a class="zoom">크게보기</a>
+																			<a href="https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1" style="text-decoration:none;" target="_blank">																				
+																				네이버 길찾기
+																			</a>
+																		</div>
+                             </div> 
+                            </div>
+                            <div class="col-sm-4">
+                                            <div class="single_service">
+                                                <div class="single_service_icon">
+                                                    <i class="fa fa-subway">지하철 이용시</i>
+                                                </div>
+                                                <div class="single_service_content">
+                                                    <h4>-2호선 강변역 하차</h4>
+    		                                            <h4>-테크노마트 판매동 지하 1층과 직접 연결</h4>                                                    
+                                                </div>
+                                            </div>
+                            </div>
+                            <div class="main_service_content">
+                                        <div class="col-sm-4">
+                                            <div class="single_service">
+                                                <div class="single_service_icon">
+                                                    <i class="fa fa-bus">버스 이용시</i>
+                                                </div>
+                                                 <div class="single_service_content">                                                 	
+                                                 	  <h4><서울버스></h4>
+                                                    <h4>-지선버스</h4>
+                                                    <h4> 2224,3212,3214</h4>
+                                                     
+    		                                            <h4>-마을버스</h4>
+    		                                            <h4>강동01, 광진01, 광진03, 광진04</h4><br/>
+    		                                            <h4><경기버스></h4>
+                                                    <h4>-일반버스</h4>
+                                                    <h4> 1, 1-1, 1-2, 9, 9-1, 13, 13-2, 15, 91,</h4>
+                                                    <h4> 92, 93, 95, 96, 112, 112-1, 2000-1,</h4>
+                                                    <h4> 2000-3, 2000-4</h4>
+    		                                            <h4>-직행버스</h4>
+    		                                            <h4> 11, 1112, 1113, 1113-1, 1113-2, </h4>
+    		                                            <h4> 1117, 1650, 1660, 5600, 5700</h4>
+                                                    <h4>-공항버스</h4>
+                                                    <h4>6705</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="col-sm-4">
+                                            <div class="single_service">
+                                                <div class="single_service_icon">
+                                                    <i class="fa fa-car">자가용 이용시</i>
+                                                </div>
+                                                 <div class="single_service_content">                                                 	
+                                                 	  <h4>-네비게이션에 강변역 또는 강변테크노마트로 검색</h4>
+                                                 	  <h4>※주차안내- 강변 테크노마트 지하주차장 이용</h4>                                                 	  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="single_service">
+                                                <div class="single_service_icon">
+                                                    <i class="fa fa-building">테크노마트내 이동시</i>
+                                                </div>
+                                                 <div class="single_service_content">                                                 	
+                                                 	  <h4>-엘리베이터가 혼잡하므로, 에스컬레이터를 이용하시면 <br/>더욱 편리합니다.</h4>                                                 	                                                	  
+                                                </div>
+                                            </div>
+                                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-.tras_wrap div.is {
- color: #8d968c;
- font-weight: bold;
- margin: 0 20px;
-}
+            <section id="footer" class="footer_widget">
+                <div class="video_overlay">
+                    <div class="container">
+                        
+                                <div class="main_footer text-center">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xs-12">
+                                            <ul class="right_menu list-inline">
+                                                <li>
+																									<a class="kakao" id="KAKAOTALK">
+																										 <img class="img-fluid" src="assets/images/kakaotalk.png" width="50" height="auto" alt="" />
+																									</a>
+																								</li>
+																								<li>
+																									<a class="kakaos" id="KAKAOSTORY">
+																										<img class="img-fluid" src="assets/images/kakaostory.png" width="50" height="auto" alt="" />
+																									</a>
+																								</li>
+																								<li>
+																									<a class="facebook" id="FACEBOOK">
+																										<img class="img-fluid" src="assets/images/facebook.png" width="50" height="auto" alt="" />
+																									</a>
+																								</li>
+																								<li>
+																									<a class="band" id="BAND">
+																										<img class="img-fluid" src="assets/images/band.png" width="50" height="auto" alt="" />
+																									</a>
+																								</li>																								
+                                            </ul>
+                                            <p class=" wow fadeInRight" data-wow-duration="1s"><i class="fa fa-copyright"></i>Copyright 2018. 안집사</p>                                              
+                                        </div>                                       
+                                    </div>
+                                </div>
+                        
+                    </div>
+                </div>
+            </section>
 
-.what table.how {
- white-space:nowrap;
- color: #888;
-}
 
-.tras_wrap img {
- height: 14px;
- vertical-align: middle;
- position: relative;
- top: -3px;
- padding-right: 5px;
-}
-.copy {
- font-size:12px;
- color:#888;
- text-align:center;
- padding-top:15px;
- padding-bottom:15px;
-}
-.slick-prev,.slick-next {
- display:none !important;
-}
-ul{
-	list-style:none;
-	padding-left:0px;
-}
-.location {padding:0 0 0 0; background:#fff;}
-.location .map {position:relative; width:100%; height:250px; margin-top:10px; overflow:hidden;}
-.location .txt {padding:10px; text-align:center; font-size:11px; color:#f1f1f1; background:#363636;}
-.location .naver {padding:15px 0 20px; text-align:center; background:#f6f6f6;}
-.location .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;}
-.location .naver a span {font-weight:normal; font-size:13px;}
-.location .naver img {display:inline-block; margin:6px 2px 0 0; vertical-align:top;}
 
-.map_zoom {position:absolute; top:0; width:100%; height:100%; z-index:-10; text-align:center; background-color:#ddd; overflow:hidden; border:0px solid red;}
-.map_zoom .top_bar {position:absolute; top:0; left:0; width:100%; height:38px; background:rgba(0,0,0,0.8); z-index:10; display:none;}
-.map_zoom .top_bar .btn_close {color:#fff; margin:0 auto; line-height:38px;}
-.map_fs {position:relative; top:0; width:100%; height:100%;}
 
-.img_zoom {position:absolute; top:0; width:100%; height:100%; z-index:-5; text-align:center; background-color:#000; overflow:hidden; border:0px solid red; display:table;}
-.img_zoom .top_bar {position:absolute; top:0; left:0; width:100%; height:38px; background:rgba(0,0,0,0.8); z-index:10; display:none;}
-.img_zoom .top_bar .btn_close {color:#fff; margin:0 auto; line-height:38px;}
-.img_zoom .viewer {vertical-align:middle; width:100%; height:100%;}
-.sns {padding:25px 0; text-align:center; font-size:0; background:#f6f6f6;}
-.sns li {display:inline-block; padding:0 5px;}
 
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="http://malsup.github.com/jquery.cycle2.js"></script>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=xkXOhCd_z7YWVrVqRxl5&submodules=geocoder"></script>
-</head>
-<body>
- <div id="wrap">
-  <div class="cycle-slideshow" style="overflow:hidden; position:relative; text-align: center;" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="120" data-cycle-auto-height="3:2">
-    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg"/>
-    <img src="https://png.pngtree.com/element_origin_min_pic/16/08/20/1457b7f4ca5302a.jpg"/>
-    <img src="https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg"/>    
-  </div>
-  <div class="content_wrap">
-   <h1><img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack/110/Party-Poppers-128.png" alt="icon finder free icon" />결혼식에 초대합니다<img src="https://cdn0.iconfinder.com/data/icons/kameleon-free-pack/110/Party-Poppers-128.png" alt="icon finder free icon" /></h1>
-   CONTENT..<br />
-   CONTENT..<br />
-   CONTENT..<br />
-    CONTENT..<br />
-   CONTENT..
-  </div>
-  <div class="contact_wrap">
-   <a href="tel:010-1234-5678" class="bg1"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-glyph-128.png" alt="tel">신랑전화</a>
-   <a href="tel:010-1234-5678" class="bg2"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-glyph-128.png" alt="tel">신부전화</a>
-   <a href="#" class="bg3"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/common-email-envelope-mail-outline-stroke-128.png" alt="email" />이메일</a>
-   <!-- <a href="mailto:@naver.com" class="bg3"><img src="https://cdn4.iconfinder.com/data/icons/miu/24/common-email-envelope-mail-outline-stroke-128.png" alt="email" />이메일</a> -->
-  </div>
-  <div class="date_wrap">
-   <span><img src="https://cdn2.iconfinder.com/data/icons/office-38/24/office-40-128.png" alt="time" />초대일시 : <strong>2018년 10월 28일(일요일) 오후 12시 20분</strong></span>
-  </div>
-  <div class="addr_wrap">
-   <span><img src="https://cdn4.iconfinder.com/data/icons/miu/24/house-home-real_estate-property-glyph-128.png" alt="place" />초대장소 : <strong>웨딩스퀘어</strong> | 서울특별시 광진구 광나루로56길 85 강변테크노마트 4층 아모르홀</span>
-  </div>
-  <!-- <div class="map_wrap" id="map"></div> -->
- <!-- <div id="daumRoughmapContainer1532880829624" class="root_daum_roughmap root_daum_roughmap_landing"></div> -->
-<!-- <div id="map" style="width:100%;height:400px;">	 -->
-<!--</div> -->
-<div class="location">
-		<p id="map" class="map"></p>
-		<p class="txt">대중교통 및 자동차 안내는 네이버 길찾기를 누르신 후 출발지를 검색하셔야 이용가능 합니다.</p>
-		<div class="naver">
-			<a class="zoom">크게보기</a>
-			<a href="https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1" style="text-decoration:none;" target="_blank">
-				<span>DIRECTION</span>
-				네이버 길찾기
-			</a>
-		</div>
-	</div>
-  <div class="tras_wrap">
-   <div>
-    <div class="what"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/subway-128.png" alt="car" /><font color="#fb6318">지하철 이용시</font>    
-    <ul>
-    		<li>-2호선 강변역 하차</li>
-    		<li>-테크노마트 판매동 지하 1층과 직접 연결</li>
-    </ul>      
-    </div>        
-    <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_directions_bus_48px-128.png" alt="bus" /><font color="#fb6318">버스 이용시</font>
-    	<ul>
-    		<li>▶서울버스</li>
-    		  <ul>
-    		  	 <li><pre> 지선버스:2224,3212,3214</pre></li>
-    		  	 <li><pre> 마을버스:강동01,광진01,광진03,광진04</pre></li>    		  	 
-    		  </ul>
-    	  <li>▶경기버스</li>
-    	     <ul>
-    		  	 <li><pre> 일반버스:1,1-1,1-2,9,9-1,13,13-2,15,91,92,</pre></li>
-    		  	 <li><pre>        93,95,96,112,112-1,2000-1,2000-3,</pre></li>
-    		  	 <li><pre>        2000-4</pre></li>
-    		  	 <li><pre> 직행버스:11,1112,1113,1113-1,1113-2,1117,</pre></li>  
-    		  	 <li><pre>        1650,1660,5600,5700</pre></li>    		    		  	 
-    		  </ul>
-    		<li>▶공항버스:    6705</li>    		
-     </ul>		     
-     </div>
-     <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_directions_car_48px-128.png" alt="car" /><font color="#fb6318">자가용 이용시</font>
-     	<ul>
-    		<li>-네비게이션에 강변역 또는 강변테크노마트로 검색</li>
-      </ul>  
-     </div>        
-     <div class="what"><img src="https://cdn3.iconfinder.com/data/icons/solid-amenities-icon-set/64/Parking_2-128.png" alt="parking" /><font color="#fb6318">주차안내</font> 
-     <ul>
-    		<li>-강변 테크노마트 지하주차장 이용</li>
-      </ul> 
-     </div>         
-     <div class="what"><img src="https://cdn4.iconfinder.com/data/icons/dot/128/escalator_2.png" alt="inner" />테크노마트내 이동시
-     	<ul>
-    		<li>엘리베이터가 혼잡하므로, 에스컬레이터를 이용하시면 <br/>더욱 편리합니다.</li>
-      </ul>   
-     	</div>    
-     </div>
-   </div>
-  </div>
-  <div class="sns" style="text-align:center;">
-		<ul>
-			<li>
-				<a class="kakao" id="KAKAOTALK">
-					<img src="images/kakaotalk.png" width="67" height="auto" alt="" />
-				</a>
-			</li>
-			<li>
-				<a class="kakaos" id="KAKAOSTORY">
-					<img src="images/kakaostory.png" width="67" height="auto" alt="" />
-				</a>
-			</li>
-			<li>
-				<a class="facebook" id="FACEBOOK">
-					<img src="images/facebook.png" width="67" height="auto" alt="" />
-				</a>
-			</li>
-			<li>
-				<a class="band" id="BAND">
-					<img src="images/band.png" width="67" height="auto" alt="" />
-				</a>
-			</li>
-		</ul>
-	</div>
-  <div class="copy">
-   ⓒ Copyright 2018, 안집사.
-  </div>
- </div>
- 
- <div id="ZOOM_LAYER" class="map_zoom">
-	<div class="top_bar"><p class="btn_close">닫기</p></div>
-	<div id="MAP_CANVAS_FS" class="map_fs"></div>
-</div>
- 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
- <script src="https://maps.googleapis.com/maps/api/js?signed_in=true"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
- <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script> 
- <script src="js/kakao.link.js"></script> 
+
+
+        </div>
+
+        <!-- START SCROLL TO TOP  -->
+        <div id="ZOOM_LAYER" class="map_zoom">
+	         <div class="top_bar"><p class="btn_close">닫기</p></div>
+	         <div id="MAP_CANVAS_FS" class="map_fs"></div>
+        </div>
+        
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/jquery.masonry.min.js"></script>
+        <script src="assets/js/jquery.fancybox.pack.js"></script>
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/kakao.link.js"></script>
+        <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script> 
+  
 <script charset="UTF-8">
 	
 var _scrollTop;
@@ -597,5 +729,6 @@ function nowTimestamp() {
   
 		
 </script>
-</body>
+
+    </body>
 </html>
