@@ -301,6 +301,7 @@ ul{
 }
 .video_overlay {
     background-color: rgba(76, 61, 114, 0.8);
+    /* background-color: rgba(204, 204, 153, 0.8); */
     width: 100%;
     height: auto;
 }
@@ -775,7 +776,6 @@ input::-ms-input-placeholder {
 
 }
 
-
 /* Team section css */
 .team{
    /* background: url(../images/teambg.jpg) no-repeat center center; */
@@ -1244,13 +1244,34 @@ input::-ms-input-placeholder {
 }
 
 .service {padding:0 0 0 0; background:#fff;}
-.service .map {position:relative; width:100%; height:250px; margin-top:10px; overflow:hidden;}
-.service .txt {padding:10px; text-align:center; font-size:11px; color:#f1f1f1; background:#363636;}
-.service .naver {padding:15px 0 20px; text-align:center; background:#f6f6f6;}
-.service .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;}
-.service .naver a span {font-weight:normal; font-size:13px;}
+.service .map{position:relative; width:100%; height:250px; margin-top:5px; margin-bottom:5px; overflow:hidden;}
+/* .service .txt {padding:10px; text-align:center; font-size:11px; color:#f1f1f1; background:#363636;} */
+.service .txt {padding-top:1px; text-align:center; color:#95e1d3; background:#f6f6f6;}
+.service .txt>h4{font-weight:bold; font-family:'Noto Sans KR';}
+.service .addr_txt{padding-top:1px; text-align:left; color:#95e1d3; background:#f6f6f6;}
+.service .addr_txt>h4{font-weight: bold; font-family:'Noto Sans KR';}
+.service .addr_txt>h4>a{color:#95e1d3;}
+.service .naver {margin-top:5px; margin-bottom:5px; height:30px; min-height:30px; text-align:center; width:100%; color:#95e1d3; background:#f6f6f6;}
+.service .naver>h3{text-align:center; font-weight: bold; font-family:'Noto Sans KR';}
+/* .service .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;} */
+/*.service .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#797979;} */
+/*.service .naver a span {font-weight:normal; font-size:13px;} */
 .service .naver img {display:inline-block; margin:6px 2px 0 0; vertical-align:top;}
 
+/*
+.naver>a:hover, .naver>a:focus{
+    color:#000000;
+}
+*/
+
+ display: inline-block;
+    min-width: 160px;
+    padding: .8em;
+    height: 45px;
+    text-align: center;
+    color: #00e0d0;
+    letter-spacing: 1px;
+    
 .map_zoom {position:absolute; top:0; width:100%; height:100%; z-index:-10; text-align:center; background-color:#ddd; overflow:hidden; border:0px solid red;}
 .map_zoom .top_bar {position:absolute; top:0; left:0; width:100%; height:38px; background:rgba(0,0,0,0.8); z-index:10; display:none;}
 .map_zoom .top_bar .btn_close {color:#fff; margin:0 auto; line-height:38px;}
@@ -1262,6 +1283,50 @@ input::-ms-input-placeholder {
 .img_zoom .viewer {vertical-align:middle; width:100%; height:100%;}
 .sns {padding:25px 0; text-align:center; font-size:0; background:#f6f6f6;}
 .flowus li {display:inline-block; padding:0 5px;}
+
+/*
+.naver i{
+    color:#95e1d3;
+    /* color:#000000; */
+ /*   
+    font-weight: bold;
+    font-size:3rem;    
+}
+
+*/
+
+/*
+.naver a{
+    color:#95e1d3;
+     color:#000000; 
+    font-weight: bold;
+    font-size:3rem;
+    font-color:#fff;    
+}
+*/
+
+.naver a{
+	  width:100%; 
+    color:#95e1d3;
+    /* color:#000000;  */
+    font-weight: bold;
+    font-size:3rem;
+    font-color:#fff;    
+}
+
+.naver:hover {
+    background-color:#00e0d0;
+    color: #fff;
+    text-decoration: none;
+    border: 0px solid #00e0d0;
+}
+
+.addr_txt:hover {
+    background-color:#00e0d0;
+    color: #fff;
+    text-decoration: none;
+    border: 0px solid #00e0d0;
+}
 
 
 
