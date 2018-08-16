@@ -62,10 +62,7 @@
                                                 <span class="icon-bar"></span>
                                             </button>
                                             <a class="navbar-brand" href="#">
-                                            <!--    홈-->
-                                                <!--
-                                                <img src="assets/images/logo.png"/>
-                                                -->
+                                            
                                             </a>
                                         </div>
 
@@ -305,14 +302,27 @@
                     <div class="row">
                            <div class="col-sm-12">
                             <div class="main_service_area sections1 text-center">
-                                    <p id="map" class="map"></p>
-																		<p class="txt">대중교통 및 자동차 안내는 네이버 길찾기를 누르신 후 출발지를 검색하셔야 이용가능 합니다.</p>
-																		<div class="naver">
-																			<a class="zoom">크게보기</a>
-																			<a href="https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1" style="text-decoration:none;" target="_blank">																				
-																				네이버 길찾기
-																			</a>
-																		</div>
+                            	      <div class="addr_txt">
+                            	      	     <h4>웨딩스퀘어</h4>
+                                           <h4>주소 : 서울특별시 광진구 광나루로56길 85</h4>
+                                           <h4>전화 : 02-3424-7000<a href="tel:02-3424-7000" title="전화걸기"> <i class="fa fa-phone"></i></a></h4>
+                             	      </div>	
+                                     <p id="map" class="map"></p>																	
+																	<!-- 	<div class="naver"> -->
+																			<!-- <a class="zoom">크게보기</a> -->
+																			<div id="nav_search" class="naver">
+																				 <h3><i class="fa fa-bus"></i>네이버 길찾기</h3>
+																		  </div>	
+																		  <div class="txt"><h4>※대중교통 및 자동차 안내는 네이버 길찾기를 누르신 후 출발지를 검색하셔야 이용가능 합니다.</h4></div>	
+																		  <!--
+																				   <a href="https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1" class="naver" style="text-decoration:none;" target="_blank">                                                                                          
+                                             <i class="fa fa-bus"></i>
+                                             네이버 길찾기
+                                           </a>  
+                                       
+                                     -->
+                                  <!--    </div>                                      -->
+																	<!--	</div> -->
                              </div> 
                             </div>
                             <div class="col-sm-4">
@@ -416,12 +426,6 @@
                 </div>
             </section>
 
-
-
-
-
-
-
         </div>
 
         <!-- START SCROLL TO TOP  -->
@@ -458,32 +462,6 @@ var fyy = 127.0958645;
 var fid = 'map';
 var fzm = 11;
 
-//var HOME_PATH = window.HOME_PATH || '.';
-//var position = new naver.maps.LatLng(37.5357104,127.0958645);
-
-//var map = new naver.maps.Map('map', {
-//    center: position,
-//    zoom: 11
-//});
-
-//var marker = new naver.maps.Marker({
-//    map: map,
-//    position: position,
-//    icon: {
-//        path: [
- //           new naver.maps.Point(0, 70), new naver.maps.Point(20, 100), new naver.maps.Point(40, 70),
- //           new naver.maps.Point(30, 70), new naver.maps.Point(70, 0), new naver.maps.Point(10, 70)
- //       ],
- //       style: "closedPath",
- //       anchor: new naver.maps.Point(23, 103),
- //       fillColor: '#ff0000',
-  //      fillOpacity: 1,
-   //     strokeColor: '#000000',
-    //    strokeStyle: 'solid',
-     //   strokeWeight: 3
-   // }
-//});
-
 $(document).ready(function(){
 	  
 var brideNm = '김혜정';
@@ -491,12 +469,11 @@ var groomNm = '안세훈';
 var title = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장";
 var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.";
 
-var wdDayKr = "2018년 10월 28일(일요일) 오후 12시 20분";
-var placeNm = "웨딩스퀘어";
-var floorHall="4층 아모르홀";
-var description2 = "[일시] " + wdDayKr + "\n" + "[장소] " + placeNm + " " + floorHall;
-var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요.\n";
-var description3 = groomNm+" ♥ "+brideNm+"\n"+"결혼식에 초대합니다.\n오셔서 축하해 주세요\n[일시] "+wdDayKr+"\n"+"[장소] "+placeNm+" "+floorHall;
+var wdDayKr = "2018년 10월 28일(일요일) 낮 12시 20분";
+var placeNm = "웨딩스퀘어 4층 아모르홀";
+var description2 = "[일시] " + wdDayKr + "\n" + "[장소] " + placeNm;
+var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n";
+var description3 = groomNm+" ♥ "+brideNm+"\n"+"결혼식에 초대합니다.\n[일시]"+wdDayKr+"\n"+"[장소] "+placeNm;
 var siteDomain = "https://wdcard.github.io";
 var myMbURLforFB = "https://wdcard.github.io";
 
@@ -528,14 +505,8 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 		img.onload = function(){
 			kakaotalk();
 		}
-		//img.onerror = function(){
-	//		KTimgSrc = _PHOTO_OUT_DIR+mIdx+"/"+_MAIN_PHOTO_PREFIX+_KAKAOTALK_PHOTO_PREFIX+_IMG_EXT+"?"+nowTimestamp();
-//			kakaotalk();
-//		}
 		
-		//카카오 링크 API v2.0 적용
-		//Kakao.init('4589cfd714e084b6776fd0c8aa627f40');
-		  
+		//카카오톡 링크 API
         function kakaotalk() {
             Kakao.Link.createDefaultButton({
                 container: '#KAKAOTALK',
@@ -560,25 +531,9 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
                 ]
             });
         }
-		// //카카오 링크 v1.0
-		// function kakaotalk() {
-		// 	Kakao.Link.createTalkLinkButton({
-		// 		container: '#KAKAOTALK',
-		// 		label: description,
-		// 		image: {
-		// 			src: siteDomain + KTimgSrc,
-		// 			width: _KAKAO_PHOTO_WIDTH,
-		// 			height: _KAKAO_PHOTO_HEIGHT
-		// 		},
-		// 		webButton: {
-		// 			text: "청첩장 바로가기",
-		// 			url: myMbURLforFB + '&' + nowTimestamp()
-		// 		}
-		// 	});
-		// }
 		
 		//카카오스토리용 이미지 (카카오톡과 같은 이미지 사용)
-		var KSimgSrc = "https://cdn.pixabay.com/photo/2015/10/12/14/55/roses-983972__340.jpg";
+		var KSimgSrc = "assets/images/otimage.jpg";
 		var img = new Image();
 		img.src = KSimgSrc;
 		img.onload = function(){
@@ -607,20 +562,24 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 		
 		//페이스북
 		$("#FACEBOOK").on("click",function(){
-			var strUrl = "http://www.facebook.com/sharer.php?u="+encodeURIComponent(myMbURLforFB)+"&t="+encodeURIComponent( brideNm + ' ♡ ' + groomNm + '의 청첩장입니다'); // 페이스북 링크등록 로봇때문에 http://www.card-market.co.kr/USERID 사용불가
+			var strUrl = "http://www.facebook.com/sharer.php?u="+encodeURIComponent(myMbURLforFB)+"&t="+encodeURIComponent( brideNm + ' ♡ ' + groomNm + '의 청첩장입니다'); 
 			window.open(strUrl);
 		});
-		
-		
-		
+	
 		//밴드
 		$("#BAND").on("click", function() {
 			var text = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장입니다.\n" + myMbURLforFB;
 			var strUrl = "http://band.us/plugin/share?body="+encodeURIComponent(text);
-			window.open(strUrl);
-			
-			//window.location.href = "bandapp://create/post?text="+encodeURIComponent(text);
+			window.open(strUrl);						
 		});
+		
+		//네이버 길찾기	
+		$("#nav_search").on("click",function(){
+		  var strUrl = "https://map.naver.com/index.nhn?elng=127.0958645&elat=37.5357104&etext=웨딩스퀘어&menu=route&pathType=1";
+			window.open(strUrl);
+		});
+		
+		
 		
 });
 
@@ -688,8 +647,6 @@ function drawMap(x,y,id,zm){
 function nowTimestamp() {
 	return (new Date).getTime();
 }
-
-  
 		
 </script>
 
