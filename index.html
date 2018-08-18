@@ -466,13 +466,13 @@ $(document).ready(function(){
 	  
 var brideNm = '김혜정';
 var groomNm = '안세훈';
-var title = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장";
-var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.";
+var title = groomNm + ' ♡ ' + brideNm + "의 모바일청첩장";
+var description1 = groomNm+" ♥ "+brideNm+"\n"+"결혼식에 초대합니다.";
 
 var wdDayKr = "2018년 10월 28일(일요일) 낮 12시 20분";
 var placeNm = "웨딩스퀘어 4층 아모르홀";
 var description2 = "[일시] " + wdDayKr + "\n" + "[장소] " + placeNm;
-var description1 = brideNm+" ♥ "+groomNm+"\n"+"결혼식에 초대합니다.\n";
+var description1 = groomNm+" ♥ "+brideNm+"\n"+"결혼식에 초대합니다.\n";
 var description3 = groomNm+" ♥ "+brideNm+"\n"+"결혼식에 초대합니다.\n[일시]"+wdDayKr+"\n"+"[장소] "+placeNm;
 var siteDomain = "https://wdcard.github.io";
 var myMbURLforFB = "https://wdcard.github.io";
@@ -547,13 +547,13 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 		$("#KAKAOSTORY").on("click",function(){
 			
 		    kakao.link("story").send({   
-		        post : brideNm + ' ♡ ' + groomNm + "의 모바일청첩장입니다.\n\n" ,
+		        post : groomNm + ' ♡ ' + brideNm + "의 모바일청첩장입니다.\n\n" ,
 		        appid : "wdcard.github.io",
 		        appver : "3.0",
 		        apiver : "1.0",
 		        appname : description3,
 		        urlinfo : JSON.stringify({
-		        	title : brideNm + ' ♡ ' + groomNm,
+		        	title : groomNm + ' ♡ ' + brideNm,
 		        	desc : myMbURLforFB,
 		        	imageurl : [KSimgSrc],
 		        	type : "article"
@@ -569,7 +569,7 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 	
 		//밴드
 		$("#BAND").on("click", function() {
-			var text = brideNm + ' ♡ ' + groomNm + "의 모바일청첩장입니다.\n" + myMbURLforFB;
+			var text = groomNm + ' ♡ ' + brideNm + "의 모바일청첩장입니다.\n" + myMbURLforFB;
 			var strUrl = "http://band.us/plugin/share?body="+encodeURIComponent(text);
 			window.open(strUrl);						
 		});
