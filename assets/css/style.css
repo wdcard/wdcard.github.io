@@ -1374,6 +1374,13 @@ input::-ms-input-placeholder {
   color:#ffffff;
 }
 
+.modal-body {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  background-color:#ffffff;
+}
+
 
 
 
