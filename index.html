@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        
         <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
 
@@ -310,6 +311,11 @@
                                      <p id="map" class="map"></p>																	
 																	<!-- 	<div class="naver"> -->
 																			<!-- <a class="zoom">크게보기</a> -->
+																			<a data-toggle="modal" data-target="#mapModal">
+																			<div id="nav_more" class="naver">
+																				 <h3><i class="fa fa-bus"></i>크게보기</h3>
+																		  </div>	
+																		</a>
 																			<div id="nav_search" class="naver">
 																				 <h3><i class="fa fa-bus"></i>네이버 길찾기</h3>
 																		  </div>	
@@ -395,7 +401,7 @@
                                 <div class="main_footer text-center">
                                     <div class="row">
                                         <div class="col-sm-12 col-xs-12">
-                                            <ul class="right_menu list-inline">
+                                            <ul class="right_menu list-inline wow fadeInLeft" data-wow-duration="1s"">
                                                 <li>
 																									<a class="kakao" id="KAKAOTALK">
 																										 <img class="img-fluid" src="assets/images/kakaotalk.png" width="50" height="auto" alt="" />
@@ -417,7 +423,7 @@
 																									</a>
 																								</li>																								
                                             </ul>
-                                            <p class=" wow fadeInRight" data-wow-duration="1s"><i class="fa fa-copyright"></i>Copyright 2018. 안집사</p>                                              
+                                            <p class="wow fadeInRight" data-wow-duration="1s"><i class="fa fa-copyright"></i>Copyright 2018. 안집사</p>                                              
                                         </div>                                       
                                     </div>
                                 </div>
@@ -429,15 +435,75 @@
         </div>
 
         <!-- START SCROLL TO TOP  -->
-        <div id="ZOOM_LAYER" class="map_zoom">
-	         <div class="top_bar"><p class="btn_close">닫기</p></div>
-	         <div id="MAP_CANVAS_FS" class="map_fs"></div>
-        </div>
+        <!-- <div id="ZOOM_LAYER" class="map_zoom"> -->
+	     <!--     <div class="top_bar"><p class="btn_close">닫기</p></div> -->
+	      <!--    <div id="MAP_CANVAS_FS" class="map_fs"></div> -->
+       <!--  </div> -->
         
+     <!-- <div class="modal fade" id="myModal" role="dialog"> -->
+    <!--  <div class="modal-dialog"> -->
+    
+      <!-- Modal content-->
+     <!-- <div id="ZOOM_LAYER" class="modal-content">-->
+     <!--   <div class="modal-header">-->
+     <!--     <button type="button" class="close" data-dismiss="modal">×</button>-->
+     <!--   </div>-->
+     <!--   <div id="MAP_CANVAS_FS" class="modal-body">     -->     
+     <!--   </div>-->
+     <!-- </div>-->
+      
+   <!--    </div> -->
+  <!--   </div> -->
+
         <div class="scrollup">
             <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
-
+     
+				 <div id="mapModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				    	<a id="nav_close" href="#" data-dismiss="modal">
+				    	<div id="close_header" class="modal-header">
+				    		<!--
+				    		<button type="button" class="close btn" data-dismiss="modal" aria-label="Close"><span><h3>x</h3></span></button>
+				    		-->
+				    		<!--
+				    		<a data-dismiss="modal" class="close" aria-label="Close" >
+				    		<div class="top_bar"><h3>닫기</h3></div>				    		
+				    	 </a>
+				    	 -->
+				    	 
+				    	  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button> -->
+                <h4>닫기</h4>
+        
+		        
+				    	<!--
+				    	 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <h3 class="modal-title" id="myModalLabel">닫기</h3> 
+                -->
+                 <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">닫기</span></button> -->
+                 <!--   <h3 class="modal-title" id="myModalLabel">닫기</h3> -->
+             </div>
+             </a>		    	 
+             <div class="container-fluid">
+								    <div class="row">
+								      <div class="col-sm-12" id="MAP_CANVAS_FS">
+								      </div>
+								    </div>
+						 </div>
+						<!--		          
+				     <div class="modal-body">
+								  <div class="container-fluid">
+								    <div class="row">
+								      <div class="col-sm-12" id="MAP_CANVAS_FS">
+								      </div>
+								    </div>
+								  </div>
+								</div>
+						 -->		
+				      </div>
+				  </div>
+				</div>
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
 
@@ -482,7 +548,22 @@ $("head title").text(title);
 Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 
 	  drawMap(fxx,fyy,fid,fzm);
-	
+	  
+	  drawMap(fxx,fyy,'MAP_CANVAS_FS',12);
+	  
+	//  $("#mapModal").hide();
+	  
+	  /*
+	  $("#nav_more").on("click", function(){
+	       drawMap(fxx,fyy,'MAP_CANVAS_FS',12);
+	  });
+	  
+	  */
+	  
+	  $('#portfolio-modal-1').load( function(){
+	  	alert("load");
+		});	
+	 /*
     $(".zoom").on("click", function(){
 			_scrollTop = $(document).scrollTop();
 			$("#ZOOM_LAYER").css("z-index",100).show();
@@ -499,6 +580,7 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 			$("#ZOOM_LAYER").hide();
 		});
 		
+		*/
 		//카카오톡 이미지
 		var KTimgSrc = "https://wdcard.github.io/assets/images/otimage.gif";
 		var img = new Image();
