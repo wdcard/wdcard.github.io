@@ -1359,7 +1359,7 @@ input::-ms-input-placeholder {
 }
 
 .modal-content {
-  height: auto;
+  height: 100%;
   min-height: 100%;
   border-radius: 0;
   background-color:#ffffff;
@@ -1375,6 +1375,8 @@ input::-ms-input-placeholder {
 }
 
 .modal-body {
+	left: 0;
+  top: 0;
   height: auto;
   min-height: 100%;
   border-radius: 0;
