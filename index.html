@@ -575,6 +575,11 @@ Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 	       drawMap(fxx,fyy,'MAP_CANVAS_FS',12);
 	  });
 	  
+	  $("#mapModal").on("hidden.bs.modal", function(){
+	  	  // alert("mapModal call");	  	 
+	  	  $("#MAP_CANVAS_FS").empty();	       
+	  });
+	  
 	  
 	  $('#portfolio-modal-1').load( function(){
 	  	alert("load");
