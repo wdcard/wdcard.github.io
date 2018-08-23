@@ -1367,7 +1367,7 @@ input::-ms-input-placeholder {
 
 .modal-header {
   height: auto;
-  min-height: 100%;
+  min-height: 5%;
   border-radius: 0;
   background-color:#000000;
   text-align:center;
