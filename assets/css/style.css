@@ -1253,7 +1253,8 @@ input::-ms-input-placeholder {
 .service .addr_txt>h4{font-weight: bold; font-family:'Noto Sans KR';}
 .service .addr_txt>h4>a{color:#95e1d3;}
 .service .naver {margin-top:5px; margin-bottom:5px; height:30px; min-height:30px; vertical-align:middle; text-align:center; width:100%; color:#95e1d3; background:#f6f6f6;}
-.service .naver>h3{text-align:center; font-weight: bold; font-family:'Noto Sans KR';}
+.service .naver>h3{vertical-align:middle; text-align:center; font-weight: bold; font-family:'Noto Sans KR';}
+.service .naver>h3>i{vertical-align:text-bottom; text-align:center;}
 /* .service .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#30bb37;} */
 /*.service .naver a {display:inline-block; line-height:34px; padding:0 15px; font-weight:bold; font-size:15px; color:#fff; border:1px solid #0f9c16; background:#797979;} */
 /*.service .naver a span {font-weight:normal; font-size:13px;} */
