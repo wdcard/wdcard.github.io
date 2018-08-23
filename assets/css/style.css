@@ -1375,8 +1375,6 @@ input::-ms-input-placeholder {
 }
 
 .modal-body {
-	left: 0;
-  top: 0;
   height: auto;
   min-height: 100%;
   border-radius: 0;
