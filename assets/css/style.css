@@ -772,6 +772,10 @@ input::-ms-input-placeholder {
     color:#000000;
 }
 
+.service .single_service .single_service_icon>a>i:hover, .single_service_icon>a>i:focus{
+    color:#000000;
+}
+
 .service .single_service .single_service_content{
 
 }
