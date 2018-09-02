@@ -917,7 +917,7 @@ input::-ms-input-placeholder {
 
 .grid{height:100px;}
 
-.grid-item {height:auto; max-width:200px;width: 16.67%; }
+.grid-item {height:auto; width: 16.67%; }
 .portfolio .grid-item{
     position: relative;
 }
@@ -965,7 +965,7 @@ input::-ms-input-placeholder {
     color:#000000;
 }
 .main_testimonial .item .single_test_author{
-	  margin-top:120px;
+	  margin-top:200px;
     margin-bottom:40px;
     font-family:'Noto Sans KR';
     display: inline-block;
@@ -1034,7 +1034,7 @@ input::-ms-input-placeholder {
     overflow: hidden;
 }
 .carousel-inner {
-    min-height: 300px;
+    min-height: 400px;
 }
 .item blockquote {
     border-left: none;
