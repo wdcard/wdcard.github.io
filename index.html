@@ -90,33 +90,50 @@
 
                 </div>
             </header> <!--End of header -->
-
-
-
-
-
+            
+            
             <section id="home" class="home">
-                <div class="overlay">
-                    <div class="container  item active">
+                <div class="video_overlay">
+                    <div class="container">
                         <div class="row">
-                            <div class="col-sm-12 ">
-                                <div class="main_home_slider text-center">
-                                    <div class="single_home_slider">
-                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                            <h2>안 세 훈 & 김 혜 정</h2>
-                                            <h2>결혼합니다</h2>                                                                                                            
+                            <div class="main_testimonial sections text-center">
+                                <div class="col-sm-12" data-wow-delay="0.2s">
+                                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                        <!-- Carousel Slides-->
+                                        <div class="carousel-inner text-center">
+
+                                            <!-- slide 1 -->
+                                            <div class="item active">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-sm-offset-2">
+                                                            <div class="single_test_author">
+                                                                <h2><strong>안 세 훈 & 김 혜 정</strong></h2>
+                                                                <h2><strong>결혼합니다</strong></h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <!-- slide 2 -->
+                                            <div class="item">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-sm-offset-2">
+                                                            <div class="single_test_author">                                                                 
+                                                               <h2><strong>2018.10.28 일요일</strong></h2>
+                                                               <h2><strong>낮 12시 20분</strong></h2>
+                                                               <div class="separator"></div>                                                                                                                                                                                                 
+                                                               <h2><strong>웨딩스퀘어 4층 아모르홀</strong></h2>         
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                   
-                                    <div class="single_home_slider">
-                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                            <h2>2018.10.28 일요일</h2>
-                                            <h2>낮 12시 20분</h2>                                     
-                                            <div class="separator"></div>                                                                                                                                    
-                                            <h2>웨딩스퀘어 4층 아모르홀</h2>                                          
-                                        </div>
+
+                                        <!-- Carousel Buttons Next/Prev -->
+                                       <!--  <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a> -->
+                                       <!--  <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> -->
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -564,9 +581,16 @@ $("head title").text(title);
 Kakao.init('c11923e3c870a54dae1355d1ec1e1216');
 
 	  drawMap(fxx,fyy,fid,fzm);
-	  
-	  
-	  
+	  /*
+	  $('.owl-stage').owlCarousel({
+	  	 items:1,
+	  	 loop:false,
+	  	 autoplay:true,
+	  	 autoplayTimeout:2000000,
+	  	 autoplayHoverPause:true
+	  	
+	  });
+	  *
 	//  $("#mapModal").hide();
 	  
 	  /*
