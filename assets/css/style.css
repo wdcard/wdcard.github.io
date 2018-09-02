@@ -916,7 +916,7 @@ input::-ms-input-placeholder {
 
 .grid{}
 
-.grid-item { width: 16.67%; }
+.grid-item { height:auto; width: 16.67%; }
 .portfolio .grid-item{
     position: relative;
 }
