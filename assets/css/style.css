@@ -304,7 +304,8 @@ ul{
     /* background-color: rgba(76, 61, 114, 0.8); */
     /* background-color: rgba(204, 204, 153, 0.8); */
     width: 100%;
-    height: auto;    
+    height:600px;
+    /*height: auto;    */
 }
 
 .no-padding {
