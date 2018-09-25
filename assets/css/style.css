@@ -365,6 +365,16 @@ Separator
     background: #c6c4c9;
 
 }
+
+.separator7 {
+    height: 2px;
+    width: 50px;
+    margin:20px 0px;
+    float:center;
+    background: #c6c4c9;
+
+}
+
 /*section:nth-of-type(odd) {
     background-color: #F9F9F9;
 }*/
@@ -961,7 +971,7 @@ input::-ms-input-placeholder {
 .portfolio .grid_item_overlay i{
     /* margin-bottom:10px; */ 
     margin-top:30%;
-    font-size:2.7rem;
+    font-size:5.0rem;
     color:#FFF;
 }
 
@@ -988,6 +998,13 @@ input::-ms-input-placeholder {
     font-family:'Noto Sans KR';
     display: inline-block;
 }
+
+.info_date_place{	  
+    margin-bottom:20px;
+    font-family:'Noto Sans KR';
+    display: inline-block;
+}
+
 .main_testimonial .item .single_test_author h4{
     color:#ffffff;
     margin-bottom:0px;
