@@ -999,7 +999,9 @@ input::-ms-input-placeholder {
     display: inline-block;
 }
 
-.info_date_place{	      
+.info_date_place{
+	  margin-top:10px;
+    margin-bottom:0px;	      
     font-family:'Noto Sans KR';
     display: inline-block;
 }
