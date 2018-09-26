@@ -761,7 +761,7 @@ input::-ms-input-placeholder {
 }
 .main_service_area{}
 .service .single_service {
-    margin-bottom:30px;
+    margin-bottom:10px;
     margin-top:20px;
     display: inline-block;
     width:100%;
